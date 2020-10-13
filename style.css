@@ -62,6 +62,7 @@ header {
 }
 
 .jumbo-ticket-price-paragraph > p > span {
+    margin-left: 15px;
     color: lime;
 }
 
