@@ -17,14 +17,81 @@ body {
 
 /* INIZIO HEADER */
 header {
-    background-color: blue;
-    padding: 50px 0;
+    background-color: #007559;
+    padding: 30px 20px;
 }
 
 .titol > h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     color: #fff;
 }
 
 /* INIZIO JUMBOTRON */
+
+.jumbotron {
+    padding: 50px 20px;
+    background-color: aqua;
+    position: relative;
+}
+
+.jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c5/685_196_a_Castelnuovo_Garfagnana.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+}
+
+.jumbotron p {
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: #d0f2e4;
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 50px;
+}
+
+.jumbo-hello-paragraph > p > span {
+    font-size: 30px;
+}
+
+.jumbo-ticket-price-paragraph > p > span {
+    font-size: 30px;
+    color: green;
+}
+
+.jumbotron button {
+    display: block;
+    margin: auto;
+    font-size: 25px;
+    padding: 40px 60px;
+    background-color: green;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    outline: none;
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+/*_______*/
