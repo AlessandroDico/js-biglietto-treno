@@ -34,17 +34,23 @@ var ticket_price_sale65 = (ticket_price) - ((ticket_price) * 40) /100;
 
 var final_ticket_price = ticket_price || ticket_price_sale18 || ticket_price_sale65 ;
 
+// ISTRUZIONI CONDIZIONALI
+
 if (anni_passeggiero < 18) {
     final_ticket_price = ticket_price_sale18 ;
     console.log(ticket_price_sale18);
+    document.getElementById('final_price').innerHTML = (ticket_price_sale18 + '€');
 
 } else if (anni_passeggiero >= 65) {
     final_ticket_price = ticket_price_sale65 ;
     console.log(ticket_price_sale65);
+    document.getElementById('final_price').innerHTML = (ticket_price_sale65 + '€');
+
 
 } else {
     final_ticket_price = ticket_price;
     console.log(ticket_price);
+    document.getElementById('final_price').innerHTML = (ticket_price + '€');
 
 }
 
