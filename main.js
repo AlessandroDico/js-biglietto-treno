@@ -24,7 +24,7 @@ console.log(kilometers);
 
 // prezzo del biglietto è uguale alla moltiplicazione dei km * prezzo fisso biglietto
 
-var ticket_price = (kilometers * fixed_price);
+var ticket_price = (kilometers * fixed_price).toFixed(2);
 console.log(ticket_price);
 
 // ci serve sapere l'età del passeggiero per sapere se può avere scontistiche
@@ -39,27 +39,28 @@ var ticket_price_sale18 = ((ticket_price) - ((ticket_price) * 20) /100).toFixed(
 
 var ticket_price_sale65 = ((ticket_price) - ((ticket_price) * 40) /100).toFixed(2);
 
-var final_ticket_price = (ticket_price || ticket_price_sale18 || ticket_price_sale65).toFixed(2) ;
 
 // ISTRUZIONI CONDIZIONALI
 
 if (passenger_years < 18) {
-    final_ticket_price = ticket_price_sale18 ;
     console.log(ticket_price_sale18);
     document.getElementById('final_price').innerHTML = (ticket_price_sale18 + '€');
 
 } else if (passenger_years >= 65) {
-    final_ticket_price = ticket_price_sale65 ;
     console.log(ticket_price_sale65);
     document.getElementById('final_price').innerHTML = (ticket_price_sale65 + '€');
 
 
 } else {
-    final_ticket_price = ticket_price;
     console.log(ticket_price);
     document.getElementById('final_price').innerHTML = (ticket_price + '€');
 
 }
+
+// PROVA isNaN
+
+
+
 
 
 /*--------------*/
