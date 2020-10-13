@@ -4,7 +4,7 @@
 // è previsto uno sconto del 20% per i minorenni
 // gli over 65 hanno diritto ad uno sconto del 40%
 
-// richiesta nome e cognome del passeggiero
+// richiesta nome e cognome del passeggero
 var passenger_name = prompt('Inserisci il tuo nome');
 document.getElementById('passenger_name').innerHTML = passenger_name;
 
@@ -17,9 +17,9 @@ document.getElementById('passenger_surname').innerHTML = passenger_surname;
 var fixed_price = parseFloat(0.21);
 console.log(fixed_price);
 
-// quanti kilometri percorrerà il passeggiero.
+// quanti kilometri percorrerà il passeggero.
 
-var kilometers = parseFloat(prompt('Quanti km percorrerà il passeggiero?'));
+var kilometers = parseFloat(prompt('Quanti km percorrerà il passeggero?'));
 console.log(kilometers);
 
 // prezzo del biglietto è uguale alla moltiplicazione dei km * prezzo fisso biglietto
@@ -27,13 +27,13 @@ console.log(kilometers);
 var ticket_price = (kilometers * fixed_price).toFixed(2);
 console.log(ticket_price);
 
-// ci serve sapere l'età del passeggiero per sapere se può avere scontistiche
+// ci serve sapere l'età del passeggero per sapere se può avere scontistiche
 
-var passenger_years = parseInt(prompt('Quanti anni ha il passeggiero?'));
+var passenger_years = parseInt(prompt('Quanti anni ha il passeggero?'));
 console.log(passenger_years);
 
-// se il passeggiero è minorenne allora avrà lo sconto del 20%
-// se il passeggiero è over 65 allora avrà lo sconto del 40%
+// se il passeggero è minorenne allora avrà lo sconto del 20%
+// se il passeggero è over 65 allora avrà lo sconto del 40%
 
 var ticket_price_sale18 = ((ticket_price) - ((ticket_price) * 20) /100).toFixed(2);
 
