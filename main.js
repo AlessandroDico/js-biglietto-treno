@@ -28,20 +28,22 @@ console.log(anni_passeggiero);
 // se il passeggiero è minorenne allora avrà lo sconto del 20%
 // se il passeggiero è over 65 allora avrà lo sconto del 40%
 
-var tiket_price_sale18 = (ticket_price) - ((ticket_price) * 20) /100;
+var ticket_price_sale18 = (ticket_price) - ((ticket_price) * 20) /100;
 
-var tiket_price_sale65 = (ticket_price) - ((ticket_price) * 40) /100;
+var ticket_price_sale65 = (ticket_price) - ((ticket_price) * 40) /100;
+
+var final_ticket_price = ticket_price || ticket_price_sale18 || ticket_price_sale65 ;
 
 if (anni_passeggiero < 18) {
-    ticket_price = tiket_price_sale18 ;
-    console.log(tiket_price_sale18);
+    final_ticket_price = ticket_price_sale18 ;
+    console.log(ticket_price_sale18);
 
 } else if (anni_passeggiero >= 65) {
-    ticket_price = tiket_price_sale65 ;
-    console.log(tiket_price_sale65);
+    final_ticket_price = ticket_price_sale65 ;
+    console.log(ticket_price_sale65);
 
 } else {
-    ticket_price = ticket_price;
+    final_ticket_price = ticket_price;
     console.log(ticket_price);
 
 }
