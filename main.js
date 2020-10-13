@@ -40,6 +40,10 @@ if (anni_passeggiero < 18) {
     ticket_price = tiket_price_sale65 ;
     console.log(tiket_price_sale65);
 
+} else {
+    ticket_price = ticket_price;
+    console.log(ticket_price);
+
 }
 
 
