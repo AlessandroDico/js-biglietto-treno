@@ -61,13 +61,8 @@ header {
     margin-bottom: 50px;
 }
 
-.jumbo-hello-paragraph > p > span {
-    font-size: 30px;
-}
-
 .jumbo-ticket-price-paragraph > p > span {
-    font-size: 30px;
-    color: green;
+    color: lime;
 }
 
 .jumbotron button {
@@ -90,6 +85,18 @@ header {
     opacity: 0.8;
 }
 
+/* FOOTER */
+
+footer {
+    background-color: #007559;
+}
+
+.footer-paragraph > p {
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
 
 
 
